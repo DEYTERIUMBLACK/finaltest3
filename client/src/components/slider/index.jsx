@@ -16,7 +16,6 @@ export default () => {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
     >
@@ -25,6 +24,10 @@ export default () => {
           src="https://preview.colorlib.com/theme/tasty/images/bg_3.jpg"
           alt=""
         />
+        <div className="sliderinfo">
+          <h1>Tasty Delicious Food</h1>
+          <button>Book a table</button>
+        </div>
       </SwiperSlide>
       <SwiperSlide>
         <img
